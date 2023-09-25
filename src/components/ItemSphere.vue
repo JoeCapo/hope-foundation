@@ -13,7 +13,7 @@
   background: radial-gradient(#7119f4 20%, #2e86fb 50%, #6eff1a 100%);
   border-radius: 9999px;
   height: 100px;
-  margin: 1rem auto;
+  margin-bottom: 1rem;
   position: relative;
   width: 100px;
   z-index: 0;

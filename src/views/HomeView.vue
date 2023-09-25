@@ -6,6 +6,7 @@ import ObjectiveItem from '../components/ObjectiveItem.vue'
 </script>
 
 <template>
+  <MainNavigation />
   <main>
     <HeaderMain />
 

@@ -17,7 +17,7 @@ defineProps(['objectiveDescription'])
 <style>
 .objective-item {
   margin-bottom: 1rem;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   background-color: #e0e0e0;
   border-radius: 20px;
 }
