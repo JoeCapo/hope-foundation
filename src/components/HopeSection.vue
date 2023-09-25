@@ -3,10 +3,10 @@ defineProps(['sectionId', 'title', 'sectionDescription', 'btnName', 'showButton'
 </script>
 
 <template>
-  <div id="{{ sectionId }}">
+  <section :id="sectionId">
     <div class="section-title">
       <h2>{{ title }}</h2>
-      <p>{{ sectionDescription }}</p>
+      <p class="fs-3">{{ sectionDescription }}</p>
     </div>
 
     <slot name="section-content"></slot>
@@ -14,7 +14,11 @@ defineProps(['sectionId', 'title', 'sectionDescription', 'btnName', 'showButton'
     <button name="section-button" type="button" class="btn btn-primary" v-if="showButton">
       {{ btnName }}
     </button>
-  </div>
+  </section>
 </template>
 
-<style></style>
+<style>
+section {
+  margin: 3rem 0;
+}
+</style>

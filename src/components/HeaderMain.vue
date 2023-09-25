@@ -3,7 +3,13 @@
     <div class="header">
       <!--Content before waves-->
       <div class="inner-header flex">
-        <img src="@/assets/images/logo-hope.png" class="img-fluid" alt="HOPE Foundation logo" />
+        <div class="image">
+          <img
+            src="@/assets/images/logo-hope-white.png"
+            class="img-fluid"
+            alt="HOPE Foundation logo"
+          />
+        </div>
         <div class="header-description">
           Our mission is to improve the lives of underserved people by supporting health education
           and medical care from the local to global levels
@@ -44,35 +50,16 @@ export default {}
 </script>
 
 <style>
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
-
-body {
-  margin: 0;
-}
-
-h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 48px;
-}
-p {
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 1px;
-  font-size: 14px;
-  color: #333333;
-}
-
 .header {
-  position: relative;
   text-align: center;
-  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  background: linear-gradient(#7119f4 0, #3f55fc 50%, #6eff1a);
   color: white;
 }
 
 .header .inner-header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .header .header-description {
@@ -81,22 +68,11 @@ p {
   line-height: 1.5;
   margin: 0 auto;
   max-width: 800px;
-  padding: 2rem 0;
-}
-
-.logo {
-  width: 50px;
-  fill: white;
-  padding-right: 15px;
-  display: inline-block;
-  vertical-align: middle;
+  padding: 1rem 0;
 }
 
 .inner-header {
-  height: 65vh;
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .flex {

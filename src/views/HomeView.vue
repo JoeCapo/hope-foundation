@@ -1,4 +1,5 @@
 <script setup>
+import MainNavigation from '../components/MainNavigation.vue'
 import HeaderMain from '../components/HeaderMain.vue'
 import HopeSection from '../components/HopeSection.vue'
 import ObjectiveItem from '../components/ObjectiveItem.vue'
@@ -55,3 +56,5 @@ committee responsible for soliciting initiatives for foundation support."
     </div>
   </main>
 </template>
+
+<style></style>

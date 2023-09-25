@@ -3,6 +3,7 @@ import HomeView from './views/HomeView.vue'
 </script>
 
 <template>
+  <MainNavigation />
   <HomeView />
 </template>
 
