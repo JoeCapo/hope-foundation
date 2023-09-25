@@ -1,0 +1,22 @@
+@import './base.css';
+
+#app {
+  font-weight: normal;
+}
+
+#app .container-fluid {
+  padding: 0;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (min-width: 1024px) {
+  body {
+    place-items: center;
+  }
+}
