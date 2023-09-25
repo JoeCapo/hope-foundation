@@ -3,6 +3,7 @@ import MainNavigation from '../components/MainNavigation.vue'
 import HeaderMain from '../components/HeaderMain.vue'
 import HopeSection from '../components/HopeSection.vue'
 import ObjectiveItem from '../components/ObjectiveItem.vue'
+import AnimatedComponent from '../components/AnimatedComponent.vue'
 </script>
 
 <template>
@@ -18,24 +19,34 @@ import ObjectiveItem from '../components/ObjectiveItem.vue'
         :showButton="false"
       >
         <template v-slot:section-content>
-          <ObjectiveItem
-            objectiveDescription="Enhance medical education to raise awareness of disease states and
+          <AnimatedComponent>
+            <ObjectiveItem
+              objectiveDescription="Enhance medical education to raise awareness of disease states and
 treatment options."
-          />
-          <ObjectiveItem
-            objectiveDescription="Support clinical and scientific research to advance our understanding of
+            />
+          </AnimatedComponent>
+          <AnimatedComponent>
+            <ObjectiveItem
+              objectiveDescription="Support clinical and scientific research to advance our understanding of
 disease states and treatment methods."
-          />
-          <ObjectiveItem
-            objectiveDescription="Provide educational opportunities in medical and scientific research for
+            />
+          </AnimatedComponent>
+          <AnimatedComponent>
+            <ObjectiveItem
+              objectiveDescription="Provide educational opportunities in medical and scientific research for
 underrepresented and economically disadvantaged individuals and groups.."
-          />
-          <ObjectiveItem
-            objectiveDescription="Facilitate medical and interventions for marginalized communities."
-          />
-          <ObjectiveItem
-            objectiveDescription="Deliver these activities at the local, national, and internaltional levels."
-          />
+            />
+          </AnimatedComponent>
+          <AnimatedComponent>
+            <ObjectiveItem
+              objectiveDescription="Facilitate medical and interventions for marginalized communities."
+            />
+          </AnimatedComponent>
+          <AnimatedComponent>
+            <ObjectiveItem
+              objectiveDescription="Deliver these activities at the local, national, and internaltional levels."
+            />
+          </AnimatedComponent>
         </template>
       </HopeSection>
       <HopeSection
