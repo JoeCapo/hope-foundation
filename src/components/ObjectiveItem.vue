@@ -17,17 +17,9 @@ defineProps(['objectiveDescription'])
 <style>
 .objective-item {
   margin-bottom: 1rem;
-}
-.objective-item .image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: linear-gradient(to bottom right, #7119f4, #6eff1a);
-  box-shadow:
-    0 0 10px rgba(0, 0, 0, 0.2),
-    /* Inner shadow for depth */ 0 0 20px rgba(0, 0, 0, 0.3),
-    /* Inner shadow for depth */ 0 0 30px rgba(0, 0, 0, 0.4); /* Inner shadow for depth */
-  transform: translateZ(10px);
+  padding: 0 2rem;
+  background-color: #e0e0e0;
+  border-radius: 20px;
 }
 
 .objective-item .description {

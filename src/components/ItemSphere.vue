@@ -10,12 +10,13 @@
 
 <style>
 .main-sphere {
-  background: linear-gradient(#fff 0%, #6eff1a 20%, #2e86fb 50%, #7119f4 100%);
+  background: radial-gradient(#7119f4 20%, #2e86fb 50%, #6eff1a 100%);
   border-radius: 9999px;
   height: 100px;
   margin: 1rem auto;
   position: relative;
   width: 100px;
+  z-index: 0;
 }
 .main-sphere:before,
 .main-sphere:after {
@@ -25,7 +26,7 @@
   filter: blur(20px);
   height: 40px;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
 .main-sphere:before {
   background: rgba(0, 0, 0, 0.4);
@@ -40,13 +41,13 @@
 
 .inner-sphere {
   background: linear-gradient(#fff 0%, #2e86fb 60%, #7119f4 100%);
-  border-radius: 9999px;
+  border-radius: 50%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-  height: 60px;
+  height: 50px;
   filter: blur(15px);
-  left: 20px;
+  left: 15px;
   position: absolute;
-  top: 15px;
-  width: 60px;
+  top: 5px;
+  width: 50px;
 }
 </style>
