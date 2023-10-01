@@ -1,9 +1,13 @@
 <script setup>
-import HomeView from './views/HomeView.vue'
+import { RouterView } from 'vue-router'
+import MainNavigation from "@/components/MainNavigation.vue";
+import HomeView from "@/views/HomeView.vue";
 </script>
 
 <template>
-  <HomeView />
+  <MainNavigation />
+
+  <RouterView />
 </template>
 
 <style scoped>

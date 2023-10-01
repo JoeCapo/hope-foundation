@@ -1,11 +1,13 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 
 <template>
-  <nav class="navbar navbar-expand-xl p-0">
+  <nav class="navbar navbar-expand-xl p-0 m-0">
     <div class="container-fluid mx-3">
-      <a class="navbar-brand" href="#">
+      <router-link to="/" class="navbar-brand">
         <img src="@/assets/images/logo-hope-white.png" alt="" width="100" />
-      </a>
+      </router-link>
       <button
         class="navbar-toggler bg-white"
         type="button"
@@ -18,7 +20,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end p-4" id="navbarSupportedContent">
-        <a class="nav-link mb-3 mb-md-0" href="#board-of-trustees">Board of Trustees</a>
+        <router-link to="/bored-of-trustees" class="nav-link mb-3 mb-md-0">Board of Trustees</router-link>
         <a class="nav-link mb-3 mb-md-0" href="#contact">Contact</a>
       </div>
     </div>
@@ -26,6 +28,7 @@
 </template>
 
 <style>
+
 .navbar {
   background-color: #7119f4;
 }

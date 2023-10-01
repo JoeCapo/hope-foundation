@@ -1,5 +1,4 @@
 <script setup>
-import MainNavigation from '../components/MainNavigation.vue'
 import HeaderMain from '../components/HeaderMain.vue'
 import HopeSection from '../components/HopeSection.vue'
 import ObjectiveItem from '../components/ObjectiveItem.vue'
@@ -8,7 +7,6 @@ import FooterMain from "@/components/FooterMain.vue";
 </script>
 
 <template>
-  <MainNavigation />
   <main>
     <HeaderMain :has-divider="true" />
 
