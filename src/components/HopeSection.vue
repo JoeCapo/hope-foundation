@@ -25,13 +25,13 @@ defineProps([
 
         <button name="section-button"
                 type="button"
-                class="btn rounded-pill align-self-center fs-3"
+                class="btn rounded-pill align-self-center fs-4"
                 v-if="showButton"
                 data-bs-toggle="modal"
                 :data-bs-target="'#' + modalId">
           {{ btnName }}
         </button>
-        <a href="" v-if="showButton" class="fs-3">{{ linkName }}</a>
+        <a href="" v-if="showButton" class="fs-4">{{ linkName }}</a>
       </section>
 
       <!-- Modal -->
@@ -75,7 +75,7 @@ section .btn, .modal .btn {
 }
 
 section .section-title {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
