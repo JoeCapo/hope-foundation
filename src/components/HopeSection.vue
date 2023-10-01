@@ -60,12 +60,13 @@ defineProps([
   border-radius: 30px;
 }
 
-section {
-  padding: 0rem 0 5rem;
-}
-
 .container {
   width: 100vw;
+}
+
+
+.container section {
+  padding: 0rem 0 5rem;
 }
 
 section .btn, .modal .btn {
@@ -79,7 +80,7 @@ section .section-title {
 }
 
 @media (max-width: 768px) {
-  section {
+  .container section {
     padding: 0rem 0 2rem;
   }
 

@@ -19,7 +19,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end p-4" id="navbarSupportedContent">
         <a class="nav-link mb-3 mb-md-0" href="#board-of-trustees">Board of Trustees</a>
-        <a class="nav-link mb-3 mb-md-0" href="#contact-form">Contact</a>
+        <a class="nav-link mb-3 mb-md-0" href="#contact">Contact</a>
       </div>
     </div>
   </nav>

@@ -4,12 +4,13 @@ import HeaderMain from '../components/HeaderMain.vue'
 import HopeSection from '../components/HopeSection.vue'
 import ObjectiveItem from '../components/ObjectiveItem.vue'
 import ContactForm from "@/components/ContactForm.vue";
+import FooterMain from "@/components/FooterMain.vue";
 </script>
 
 <template>
   <MainNavigation />
   <main>
-    <HeaderMain :has-divider="true"/>
+    <HeaderMain :has-divider="true" />
 
     <HopeSection
       sectionId="objectives"
@@ -145,7 +146,6 @@ committee responsible for soliciting initiatives for foundation support."
       :showButton="true"
       btnName="Meet the team"
     />
-
     <HopeSection
         section-id="contact"
         :has-divider="true"
@@ -157,6 +157,8 @@ opportunity to connect abou helping us create lasting impact.">
         <ContactForm />
       </template>
     </HopeSection>
+
+    <FooterMain :has-divider="true" />
   </main>
 </template>
 
