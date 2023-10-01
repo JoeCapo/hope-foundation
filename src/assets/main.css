@@ -9,8 +9,42 @@
 }
 
 #app h2 {
-  font-size: 3rem;
+  /*font-size: 3rem;*/
+  font-size: clamp(2rem, 5vw, 3rem);
   line-height: normal;
+  color: #7119f4;
+}
+
+.section-title p {
+  font-size: clamp(18px, 4vw, 2rem);
+}
+
+hr{
+  opacity: 1 !important;
+  margin: 0 !important;
+  width: 100%;
+}
+
+.hr {
+  overflow: visible;
+  height: 60px;
+  border-style: solid;
+  border-color: #7119f4;
+  border-width: 3px 0 0 0;
+  border-radius: 30px;
+  background-color: transparent;
+
+  &::before {
+    display: block;
+    content: "";
+    height: 60px;
+    margin-top: -61px;
+    border-style: solid;
+    border-color: #7119f4;
+    border-width: 0 0 3px 0;
+    border-radius: 30px;
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 1024px) {

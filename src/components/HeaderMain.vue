@@ -1,53 +1,52 @@
+<script setup>
+defineProps(['hasDivider'])
+</script>
+
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid mb-5">
     <div class="header">
       <!--Content before waves-->
       <div class="inner-header flex">
         <div class="image">
           <img
-            src="@/assets/images/logo-hope-white.png"
-            class="img-fluid"
+            src="@/assets/images/hope-header.jpg"
             alt="HOPE Foundation logo"
           />
         </div>
+        <hr v-if="hasDivider" class="hr">
         <div class="header-description">
           Our mission is to improve the lives of underserved people by supporting health education
           and medical care from the local to global levels
         </div>
+        <!--Waves Container-->
+        <div>
+          <svg
+              class="waves"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28"
+              preserveAspectRatio="none"
+              shape-rendering="auto"
+          >
+            <defs>
+              <path
+                  id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+        <!--Waves end-->
       </div>
-
-      <!--Waves Container-->
-      <div>
-        <svg
-          class="waves"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 24 150 28"
-          preserveAspectRatio="none"
-          shape-rendering="auto"
-        >
-          <defs>
-            <path
-              id="gentle-wave"
-              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-            />
-          </defs>
-          <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-          </g>
-        </svg>
-      </div>
-      <!--Waves end-->
     </div>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
 
 <style>
 .header {
@@ -62,13 +61,20 @@ export default {}
   justify-content: center;
 }
 
+.header .inner-header img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
 .header .header-description {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.5;
   margin: 0 auto;
-  max-width: 800px;
-  padding: 1rem 0;
+  max-width: 70vw;
+  padding: 0 0 2rem;
 }
 
 .inner-header {
@@ -85,18 +91,12 @@ export default {}
 
 .waves {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 15vh;
   margin-bottom: -7px; /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
-}
-
-.content {
-  position: relative;
-  height: 20vh;
-  text-align: center;
-  background-color: white;
+  bottom: 0;
 }
 
 /* Animation */
@@ -133,7 +133,6 @@ export default {}
   .header .header-description {
     font-size: 1rem;
     max-width: 100%;
-    padding: 1rem 0;
   }
 
   .waves {
@@ -145,6 +144,13 @@ export default {}
   }
   h1 {
     font-size: 24px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .header .inner-header img {
+    width: clamp(25vw, 100%, 100%);
   }
 }
 </style>

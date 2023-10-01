@@ -2,12 +2,12 @@
 
 <template>
   <nav class="navbar navbar-expand-xl p-0">
-    <div class="container-fluid">
+    <div class="container-fluid mx-3">
       <a class="navbar-brand" href="#">
-        <img src="@/assets/images/logo-hope.png" alt="" width="100" />
+        <img src="@/assets/images/logo-hope-white.png" alt="" width="100" />
       </a>
       <button
-        class="navbar-toggler"
+        class="navbar-toggler bg-white"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent"
@@ -17,9 +17,9 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <a class="nav-link" href="#our-beneficiaries">Our Beneficiaries</a>
-        <a class="nav-link" href="#our-team">Our Team</a>
+      <div class="collapse navbar-collapse justify-content-end p-4" id="navbarSupportedContent">
+        <a class="nav-link mb-3 mb-md-0" href="#board-of-trustees">Board of Trustees</a>
+        <a class="nav-link mb-3 mb-md-0" href="#contact-form">Contact</a>
       </div>
     </div>
   </nav>
