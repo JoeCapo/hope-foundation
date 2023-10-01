@@ -1,7 +1,8 @@
 {
   "name": "hope-foundation",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://joecapo.github.io/hope-foundation/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
