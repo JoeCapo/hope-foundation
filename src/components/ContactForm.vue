@@ -40,7 +40,7 @@ const submitForm = () => {
         <div class="info col">
           <div class="mb-2">
             <label for="name"
-                   class="form-label">Email address</label>
+                   class="form-label">Name</label>
             <input type="text"
                    class="form-control"
                    id="name"
@@ -58,7 +58,7 @@ const submitForm = () => {
         <div class="message col">
           <div class="mb-3">
             <label for="message"
-                   class="form-label">Example textarea</label>
+                   class="form-label">Message</label>
             <textarea
                 class="form-control"
                 id="message"
