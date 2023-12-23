@@ -1,13 +1,15 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import MainNavigation from "@/components/MainNavigation.vue";
-import HomeView from "@/views/HomeView.vue";
+import MainNavigation from '@/components/MainNavigation.vue'
+import FooterMain from '@/components/FooterMain.vue'
 </script>
 
 <template>
   <MainNavigation />
 
   <RouterView />
+
+  <FooterMain :has-divider="true" />
 </template>
 
 <style scoped>
